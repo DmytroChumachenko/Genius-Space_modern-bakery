@@ -1,14 +1,18 @@
 /* variables */
 :root {
-  --color-primary-dark:#31261A;
-  --color-primary-light:#FAF4EA;
-  --color-brand-light:#819B57;
-  --color-brand-dark:#465929;
+  --color-primary-dark: #31261A;
+  --color-primary-light: #FAF4EA;
+  --color-brand-light: #819B57;
+  --color-brand-dark: #465929;
 }
+
 /* base */
 body {
   color: var(--color-primary-dark);
+  font-family: 'Poppins',
+    sans-serif;
 }
+
 ul {
   list-style-type: none;
 }
@@ -30,6 +34,7 @@ ul {
 /* link */
 .link {
   color: var(--color-primary-light);
+  text-decoration: none;
 }
 
 .link:hover {
@@ -39,6 +44,9 @@ ul {
 /* hero section */
 .hero-title {
   color: var(--color-primary-light);
+  text-align: center;
+  font-weight: 900;
+  font-size: 128px;
 }
 
 .hero-title .accent {
@@ -53,4 +61,13 @@ ul {
 
 .section-title .accent {
   color: var(--color-brand-dark);
+}
+
+/* traditions section */
+.traditions-text .brand {
+  color: var(--color-brand-dark);
+}
+
+.traditions-text .uppercase {
+  text-transform: uppercase;
 }
