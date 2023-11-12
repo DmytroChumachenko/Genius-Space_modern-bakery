@@ -1,16 +1,18 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-.flex-container{
-display: flex;
-flex-direction: column;
-justify-content: center;
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: radial-gradient( gold 50%, blue 50%, blue 70%, green 70%, green 100%);
 }
+
 .item {
   flex-basis: 100px;
   height: 100px;
-  background-color: coral;
+  /* background-color: coral; */
   padding: 10px;
   border: 5px solid darkblue;
   margin: 10px;
