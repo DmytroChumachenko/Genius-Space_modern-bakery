@@ -37,7 +37,9 @@
 }
 
 /* base */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -59,6 +61,9 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+a {
+  display: inline-block;
 }
 
 address {
@@ -239,18 +244,28 @@ ul {
   border: 2px solid var(--color-brand-light);
   content: '';
 }
+.chef-text p{
+margin-bottom: 24px;
+}
+.chef-text p:last-child{
+margin-bottom: 0px;
+}
+
 .chefs-list {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 40px 30px;
 }
+
 .chefs-item {
-  
   flex-basis: calc((100% - 30px) / 2);
 }
+
 .chef-card {
   display: flex;
   gap: 30px;
 }
+
 .chef-title {
   margin-bottom: 16px;
   font-size: 40px;
@@ -260,14 +275,16 @@ ul {
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
-  -16px 16px 0 2px var(--color-secondary-dark);
+    -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 /* format section */
 .formats-container {
   display: flex;
+  align-items: center;
   gap: 32px;
 }
+
 .formats-title {
   margin-bottom: 80px;
 }
@@ -302,12 +319,66 @@ ul {
   font-weight: 300;
 }
 
+/* carousel */
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+  fill: var(--color-primary-dark);/*inharited for children(carousel-arrow)*/
+}
+
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);/*works fo carousel-arrow:hover*/
+}
+
 /* contacts section */
+.contacts-section {
+  padding-bottom: 96px;
+}
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
 .contacts-title {
   margin-bottom: 16px;
 }
+.contacts-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+}
 
 /* footer */
+.footer {
+  padding: 32px 0;
+}
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.footer-logo,
+.footer-menu,
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+
 .adress-link {
   color: var(--color-primary-light);
   font-size: 16px;
@@ -323,7 +394,14 @@ ul {
   font-size: 14px;
 }
 
-/* footer  */
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
+
 .footer {
   background-color: var(--color-primary-dark);
   background-image: url(./image/footer-bg.png);
