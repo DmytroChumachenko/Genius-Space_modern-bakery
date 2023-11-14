@@ -239,7 +239,18 @@ ul {
   border: 2px solid var(--color-brand-light);
   content: '';
 }
-
+.chefs-list {
+  display: flex;
+  gap: 30px;
+}
+.chefs-item {
+  
+  flex-basis: calc((100% - 30px) / 2);
+}
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
 .chef-title {
   margin-bottom: 16px;
   font-size: 40px;
@@ -253,6 +264,10 @@ ul {
 }
 
 /* format section */
+.formats-container {
+  display: flex;
+  gap: 32px;
+}
 .formats-title {
   margin-bottom: 80px;
 }

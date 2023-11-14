@@ -53,45 +53,55 @@
     <section class="traditions-section section" id="traditions-section">
       <div class="container">
         <div class="traditions-container">
-<div class="traditions-content">
-
-  <h2 class="traditions-title section-title">Новий формат традицій</h2>
-  <p class="traditions-text">
-    <span class="brand uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла
-    смак традиційної випічки та натуральність інгредієнтів.
-  </p>
-  <p class="traditions-text traditions-text-limited">
-    Ми працюємо як найвідоміші мережі—
-    <span class="brand">5 хвилин і замовлення готове.</span>
-    А ще у наших пекарень стильний дизайн
-    та висока якість обслуговування!
-  </p>
-</div>
-          <img src="./image/baker-man.jpg" alt="Пекар чоловік">
+          <div class="traditions-content">
+            <h2 class="traditions-title section-title">Новий формат традицій</h2>
+            <p class="traditions-text">
+              <span class="brand uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і зберегла
+              смак традиційної випічки та натуральність інгредієнтів.
+            </p>
+            <p class="traditions-text traditions-text-limited">
+              Ми працюємо як найвідоміші мережі—
+              <span class="brand">5 хвилин і замовлення готове.</span>
+              А ще у наших пекарень стильний дизайн
+              та висока якість обслуговування!
+            </p>
+          </div>
+          <!-- <img src="./image/baker-man.jpg" alt="Пекар чоловік"> -->
+          <picture>
+            <source srcset=" ./image/baker-man-md.webp" type="image/webp" media="(max-width: 768px)" />
+            <source srcset="./image/baker-man-xxl.webp" type="image/webp" media="(min-width: 1400px)" />
+            <source srcset="./image/baker-man-md.jpg" media="(max-width: 1400px)" />
+            <img src="./image/baker-man-xxl.jpg" alt="Пекар чоловік" />
+          </picture>
         </div>
       </div>
     </section>
     <section class="section" id="chefs-section">
       <div class="container">
         <h2 class="chefs-title section-title centered">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
-        <ul>
-          <li>
-            <article>
+        <ul class="chefs-list">
+          <li class="chefs-item">
+            <article class="chef-card">
               <img class="chef-photo" src="./image/nastya-chef.jpg" alt="nastya chef">
-              <h3 class="chef-title">Настя</h3>
-              <p>Привіт, я Настя!</p>
-              <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-              <p>Я випічу для вас найсмачніщі вироби!</p>
+              <div>
+                <h3 class="chef-title">Настя</h3>
+                <p class="chef-text">Привіт, я Настя!</p>
+                <p class="chef-text">Вже 10 років, я втілюю <br>
+                  у життя цікаві та смачні ідеї.</p>
+                <p class="chef-text">Я випічу для вас <br> найсмачніщі вироби!</p>
+              </div>
             </article>
           </li>
-          <li>
-            <article>
+          <li class="chefs-item">
+            <article class="chef-card">
               <img class="chef-photo" src="./image/vlad-chef.jpg" alt="vlad chef">
-              <h3 class="chef-title">Влад</h3>
-              <p>Привіт, я Влад!</p>
-              <p>Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов,
-                з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
-              <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+              <div>
+                <h3 class="chef-title">Влад</h3>
+                <p class="chef-text">Привіт, я Влад!</p>
+                <p class="chef-text">Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов,
+                  з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
+                <p class="chef-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
+              </div>
             </article>
           </li>
         </ul>
@@ -100,41 +110,46 @@
     <section class="section" id="formats-section">
       <div class="container">
         <h2 class="formats-title section-title centered">Формати</h2>
-        <ul class="formats-list">
-          <li class="formats-item">
-            <article class="format-card">
-              <h3 class="format-title" lang="en">Walrus</h3>
-              <div class="format-text">
-                <p> Площа: до 120 м2</p>
-                <p> Меню: розширене меню</p>
-                <p> Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби </p>
-                <p>Посадкові місця: є</p>
-              </div>
-            </article>
-          </li>
-          <li class="formats-item">
-            <article class="format-card">
-              <h3 class="format-title" lang="en">Horseshoe</h3>
-              <div class="format-text">
-                <p>Площа: до 25 м2</p>
-                <p> Меню: найпопулярніші позиції меню</p>
-                <p> Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-                <p>Посадкові місця: відсутні</p>
-              </div>
-            </article>
-          </li>
-          <li class="formats-item">
-            <article class="format-card">
-              <h3 class="format-title" lang="en">Handlebar</h3>
-              <div class="format-text">
-                <p>Площа: до 15 м2</p>
-                <p>Меню: найпопулярніші позиції меню</p>
-                <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                <p>Посадкові місця: відсутні</p>
-              </div>
-            </article>
-          </li>
-        </ul>
+        <div class="formats-container">
+          <button class="carousel-button" type="button">-</button>
+          
+          <ul class="formats-list">
+            <li class="formats-item">
+              <article class="format-card">
+                <h3 class="format-title" lang="en">Walrus</h3>
+                <div class="format-text">
+                  <p> Площа: до 120 м2</p>
+                  <p> Меню: розширене меню</p>
+                  <p> Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби </p>
+                  <p>Посадкові місця: є</p>
+                </div>
+              </article>
+            </li>
+            <li class="formats-item">
+              <article class="format-card">
+                <h3 class="format-title" lang="en">Horseshoe</h3>
+                <div class="format-text">
+                  <p>Площа: до 25 м2</p>
+                  <p> Меню: найпопулярніші позиції меню</p>
+                  <p> Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
+            </li>
+            <li class="formats-item">
+              <article class="format-card">
+                <h3 class="format-title" lang="en">Handlebar</h3>
+                <div class="format-text">
+                  <p>Площа: до 15 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button class="carousel-button" type="button">-</button>
+        </div>
       </div>
     </section>
     <section class="section" id="contacts-section">
