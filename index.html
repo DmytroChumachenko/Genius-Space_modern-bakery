@@ -29,7 +29,7 @@
             <li><a class="link" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
       </div>
     </div>
   </header>
@@ -78,7 +78,7 @@
     </section>
     <section class="section" id="chefs-section">
       <div class="container">
-        <h2 class="chefs-title section-title centered">Наші найкращі<span class="accent"> шеф-кухарі</span></h2>
+        <h2 class="chefs-title section-title centered">Наші найкращі<br><span class="accent"> шеф-кухарі</span></h2>
         <ul class="chefs-list">
           <li class="chefs-item">
             <article class="chef-card">
@@ -86,10 +86,10 @@
               <div>
                 <h3 class="chef-title">Настя</h3>
                 <div class="chef-text">
-                  <p >Привіт, я Настя!</p>
-                  <p >Вже 10 років, я втілюю <br>
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я втілюю <br>
                     у життя цікаві та смачні ідеї.</p>
-                  <p >Я випічу для вас <br> найсмачніщі вироби!</p>
+                  <p>Я випічу для вас <br> найсмачніщі вироби!</p>
                 </div>
               </div>
             </article>
@@ -225,6 +225,13 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden">
+    <div class="modal">
+      <button class="modal-btn-close" type="button">Close</button>
+
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
