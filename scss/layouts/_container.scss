@@ -1,0 +1,8 @@
+
+.container {
+  width: 100%;
+  max-width: 1288px;  
+  /* width 1240px + padding 24 + 24 because box-sizing: border-box*/
+  margin: 0 auto;
+  padding: 0 24px;
+}
