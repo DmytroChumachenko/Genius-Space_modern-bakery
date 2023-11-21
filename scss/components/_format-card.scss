@@ -1,8 +1,8 @@
 .format-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  position: relative;
   height: 444px;
   padding: 24px;
   /*remove*/
@@ -13,11 +13,7 @@
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
-  transition: transform 0.3s;
-  
-  &:hover {
-    transform: scale(1.05);
-  }
+  overflow: hidden;
 
   &__image {
     position: absolute;

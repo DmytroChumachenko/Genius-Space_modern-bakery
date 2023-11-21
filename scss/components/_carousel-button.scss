@@ -1,5 +1,5 @@
 .carousel-button {
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -12,14 +12,14 @@
   cursor: pointer;
   fill: var(--color-primary-dark);
   /*inharited for children(carousel-arrow)*/
-}
 
-.carousel-button.next {
-  transform: rotate(180deg);
-}
-
-.carousel-button:hover {
-  background-color: var(--color-primary-dark);
-  fill: var(--color-primary-light);
-  /*works fo carousel-arrow:hover*/
+  &.next {
+    transform: rotate(180deg);
+  }
+  
+  &:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+    /*works for carousel-arrow:hover*/
+  }
 }
